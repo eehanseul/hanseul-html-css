@@ -1,94 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 상태바 </title>
+    <title>Document</title>
+    <link rel='stylesheet' href='./style.css'>
 </head>
 
-<body class="hello">
-    *웹 브라우저 통해 보여지는 내용*
+<body>
+    <nav>
+        <div class="navframe">
+            <!-- pure HTML/CSS/JS -->
+            <div class="navItem">Home</div>
 
-    <h2> 1. 글 태그 관련</h2>
-    <blockquote cite="https://naver.com">
-        네이버 인용구 태그
-    </blockquote>
-    <hr>
+            <!-- 리액트/뷰같은 프레임워크 스타일 -->
+            <div class="navItem">Project</div>
+            <div class="navItem">Recommend</div>
+            <div class="navItem">Home</div>
+        </div>
+    </nav>
 
-    <p>
-        오늘은 즐거운 일이 펼쳐질거야
-        벌써 오후잖아?
-    </p>
-    <pre style="font-size: large">
-    오늘은 즐거운 일이 펼쳐질거야 
-    벌써 오후잖아?
-    </pre><br>
+    <header>
+        <div class="headerframe">
+            <div class="mainprofile">
+                <div class="badge">👋 안녕하세요!</div>
+    
+                <h1>신입 클라우드 개발자<br />
+                    <em>Problem Solver.</em><br />
+                    이한슬입니다.<br />
+                </h1>
+    
+                <div class="headerLinkContainer">
+                    <a class="headerLink Git" href="https://github.com/eehanseul" target="_blank">Github Link</a>
+                    <a class="headerLink Res" href="#" target="_blank">Resume Link</a>
+                </div>
+            </div>
 
-    <i> 이텔릭체 표시</i> <br>
-    <em> 이텔릭체 강조</em> <br>
-    <b> 텍스트 진하게</b> <br>
-    <strong> 텍스트 진하게 강조</strong> <br><br>
+            <div class="pic"></div>
+        </div>
+        
+        
+    </header>
+
+    <div class="intro">
+        <img class="fly-icon" src="free-icon.png">
+        </img>
+        <div class="main">
+            ‘STABLE’을 목표로 하는 개발자,<br />
+            이한슬입니다.
+        </div>
+        <br /><br />
+        <div class="cont">
+            - 나의 구현으로 누군가에게 도움이 될 수 있다는 것에 보람을 느껴요.<br />
+            - 새로운 기술을 거부감 없이 배우면서 신속하고 효과적으로 변화를 잘 따라 갈 수 있습니다.<br />
+            - 다양한 언어와 프레임워크를 활용해서 효율적인 솔루션을 제공하려고 노력합니다.<br />
+        </div>
+    </div >
+
+    <div class="contact">
+        <div class="iconframe">
+            <div class="icon fb">
+                <svg xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.6055 0H4.39453C1.97159 0 0 1.97159 0 4.39453V25.6055C0 28.0284 1.97159 30 4.39453 30H13.2422V19.3945H9.72656V14.1211H13.2422V10.5469C13.2422 7.63893 15.6077 5.27344 18.5156 5.27344H23.8477V10.5469H18.5156V14.1211H23.8477L22.9688 19.3945H18.5156V30H25.6055C28.0284 30 30 28.0284 30 25.6055V4.39453C30 1.97159 28.0284 0 25.6055 0Z" fill="#21243D"/>
+                </svg>
+            </div>
+            <div class="icon insta">
+                <svg xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.7209 0H8.27874C3.71384 0 0 3.71402 0 8.27892V21.7211C0 26.2862 3.71384 30 8.27874 30H21.7209C26.2862 30 30 26.286 30 21.7211V8.27892C30.0002 3.71402 26.2862 0 21.7209 0ZM27.3384 21.7211C27.3384 24.8185 24.8185 27.3383 21.7211 27.3383H8.27874C5.18153 27.3384 2.66175 24.8185 2.66175 21.7211V8.27892C2.66175 5.18171 5.18153 2.66175 8.27874 2.66175H21.7209C24.8183 2.66175 27.3383 5.18171 27.3383 8.27892V21.7211H27.3384Z" fill="#21243D"/>
+                    <path d="M15 7.27026C10.7375 7.27026 7.26978 10.738 7.26978 15.0005C7.26978 19.2628 10.7375 22.7304 15 22.7304C19.2625 22.7304 22.7303 19.2628 22.7303 15.0005C22.7303 10.738 19.2625 7.27026 15 7.27026ZM15 20.0685C12.2054 20.0685 9.93152 17.795 9.93152 15.0003C9.93152 12.2055 12.2052 9.93183 15 9.93183C17.7948 9.93183 20.0685 12.2055 20.0685 15.0003C20.0685 17.795 17.7947 20.0685 15 20.0685Z" fill="#21243D"/>
+                    <path d="M23.0545 5.01318C22.5417 5.01318 22.0379 5.2208 21.6757 5.58457C21.3118 5.94657 21.1025 6.45053 21.1025 6.96513C21.1025 7.47814 21.3119 7.98192 21.6757 8.34569C22.0377 8.70769 22.5417 8.91708 23.0545 8.91708C23.5691 8.91708 24.0713 8.70769 24.435 8.34569C24.7988 7.98192 25.0064 7.47796 25.0064 6.96513C25.0064 6.45053 24.7988 5.94657 24.435 5.58457C24.073 5.2208 23.5691 5.01318 23.0545 5.01318Z" fill="#21243D"/>
+                </svg>
+            </div>
+            <div class="icon linkedin">
+                <svg xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.6055 0H4.39453C1.97159 0 0 1.97159 0 4.39453V25.6055C0 28.0284 1.97159 30 4.39453 30H25.6055C28.0284 30 30 28.0284 30 25.6055V4.39453C30 1.97159 28.0284 0 25.6055 0ZM10.6055 23.7891H7.08984V11.4844H10.6055V23.7891ZM10.6055 9.72656H7.08984V6.21094H10.6055V9.72656ZM22.9102 23.7891H19.3945V16.7578C19.3945 15.7887 18.6058 15 17.6367 15C16.6676 15 15.8789 15.7887 15.8789 16.7578V23.7891H12.3633V11.4844H15.8789V12.147C16.7999 11.8607 17.3982 11.4844 18.5156 11.4844C20.8999 11.4869 22.9102 13.6258 22.9102 16.1536V23.7891Z" fill="#21243D"/>
+                </svg>
+            </div>
+        </div>
 
 
-
-    <h2> 2. 동작 관련 태그</h2>
-    <a href="https://github.com/eehanseul">My github</a> <br>
-    <input type="text" name="username" maxlength=20 placeholder="이름" />
-    <br><br>
-
-    <label for="chk ">입력요소에 대한 설명 또는 클릭 가능한 레이블</label>
-    <input type="checkbox" id="chk" name="chk">
-    <br><br>
-
-    <h> textarea : 여러줄 텍스트 입력</h><br>
-    <textarea row="5" cols="50" placeholder="텍스트 입력하세요"></textarea>
-    <br><br>
-
-    <h> form : 데이터를 서버로 제출하는 양식</h>
-    <form action="/submit" method="post">
-        <input type="text" name="username" placeholder="사용자명">
-        <input type="password" name="password" placeholder="비밀번호">
-        <button type="submit">제출</button>
-    </form>
-    <br>
-
-    <h> select : 드롭다운 목록을 생성</h>
-    <select>
-        <option value="1">항목 1</option>
-        <option value="2">항목 1</option>
-        <option value="3">항목 1</option>
-    </select>
-    <br><br>
-
-    <h> fieldset : 관련된 입력 요소를 그룹화, 보통&lt;legend&gt;와 함께 사용</h>
-    <fieldset>
-        <legend> 개인정보</legend>
-        <label for="name">이름: </label>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">이메일: </label>
-        <input type="email" id="email" name="email"><br>
-    </fieldset> <br>
-
-    <h> iframe : 다른 html페이지를 현재 페이지에 삽입</h>
-    <iframe src="https://eehanseul.github.io/eehanseul/" width="600" height="200"></iframe><br><br>
-    <br>
-
-    <h2>3. 미디어 관련 태그</h2>
-    <h> img : 이미지 삽입하는 태그, src 속성으로 경로 지정</h>
-    <img src="https://images.unsplash.com/photo-1475440197469-e367ec8eeb19?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    width="600" height="300" alt="야구장"> <br><br>
-
-    <h>article : 당 문서나 페이지 또는 사이트와는 완전히 독립적으로 구성할 수 있는 요소를 정의</h>
-    <article>
-        <h3>2월 19일 날씨 정보</h3>
-        <h4>서울</h4>
-        <p>맑음</p>
-        <h4>대전</h4>
-        <p>흐림</p>
-        <h4>부산</h4>
-        <p>비</p>
-    </article> <br><br>
+        <div class="call">
+            <div class="calltext">
+                contact<br />
+                me
+            </div>
+        </div>
+    
+    </div>
 
     
+
+
 </body>
+
 </html>

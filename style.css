@@ -21,7 +21,51 @@ nav {
   height: 100px;
 }
 
-.navItem {}
+.navframe {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  gap: 40px;
+}
+
+.navItem {
+  color: #403930;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  /* 30px */
+}
+
+/* header 세션 */
+header {
+  display: flex;
+  width: 1366px;
+  height: 662px;
+  padding: 100px 120px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.group{
+  display: flex;
+  align-items: flex-start;
+  gap: 200px;
+  width: 1120px;
+  height: 464px;
+  flex-shrink: 0;
+}
+.mainprofile{
+  display: flex;
+  width: 556.001px;
+  height: 464px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+}
 
 .badge {
   display: flex;
@@ -45,40 +89,8 @@ nav {
   margin-bottom: 40px;
 }
 
-header {
-  display: flex;
-  width: 1300px;
-  height: 600px;
-  padding: 100px 120px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-/* 프로필 조절 */
-.pic {
-  display: flex;
-  width: 355.624px;
-  height: 350px;
-  flex-shrink: 0;
-  border-radius: 500px;
-  border: 10px solid #BCF2F9;
-  background: url(/image.jpg),
-    lightgray 50% / cover no-repeat;
-}
-
-.mainprofile {
-  display: flex;
-  width: 556.001px;
-  height: 464px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 40px;
-  flex-shrink: 0;
-}
-
 header h1 {
+  width: 700px;
   color: #333;
   font-size: 64px;
   font-style: normal;
@@ -87,7 +99,6 @@ header h1 {
   /* 80px */
   letter-spacing: -1.28px;
 }
-
 header h1 em {
   background: linear-gradient(99deg,
       #001f8f 3.58%,
@@ -97,6 +108,19 @@ header h1 em {
   -webkit-text-fill-color: transparent;
 }
 
+.picprofile {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  flex-shrink: 0;
+  border-radius: 500px;
+  border: 10px solid #BCF2F9;
+  background: url(/image.jpg),
+    lightgray 50% / cover no-repeat;
+  background-size: cover;
+}
+
+
 .headerLinkContainer {
   display: flex;
   align-items: flex-start;
@@ -105,7 +129,7 @@ header h1 em {
 
 .headerLink {
   display: flex;
-  width: 200px;
+  width: 150px;
   padding: 24px 40px;
   flex-direction: column;
   justify-content: center;
@@ -131,42 +155,45 @@ header h1 em {
   color: #403930;
 }
 
-
-
+/* 자기소개 세션 */
 .intro {
-  background: linear-gradient(96deg,
-      rgba(199, 210, 234, 0.4) 1.72%,
-      rgba(133, 196, 191, 0.4) 97.93%);
-
-    
-    width: 1366px;
-    height: 497px;
-    padding: 100px 120px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.main {
+.introframe {
+  display: flex;
+  width: 1366px;
+  height: 497px;
+  padding: 100px 120px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background: linear-gradient(96deg, rgba(189, 210, 255, 0.40) 1.72%, rgba(116, 224, 215, 0.40) 158.93%);
+}
+.smallif{
+  display: flex;
+  width: 1120px;
+  height: 300px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-shrink: 0;
+}
+.i_t1 {
   color: #000;
   font-family: Pretendard;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%;
-  /* 50px */
+  line-height: 125%; /* 50px */
+  letter-spacing: -0.8px;
 }
-.fly-icon{
-  width: 119px;
-  height: 119px;
-
-  position: absolute;
-  right: 416px;
-  top: 43px;
-}
-
-.cont {
+.i_t2{
   height: 172px;
   flex-shrink: 0;
   align-self: stretch;
@@ -176,39 +203,65 @@ header h1 em {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 200%; /* 30px */
+  line-height: 200%;
+}
+.positionrelative{
+  position: relative;
+}
+.fly-icon {
+  width: 119px;
+  height: 119px;
 
+  position: absolute;
+  left:10px;
+  bottom: 60px;
 }
 
-.contact{
+/* 연락처 부분 */
+.contact {
   background: #FAFAFA;
   width: 1366px;
   height: 182px;
   flex-shrink: 0;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.iconframe{
-  display: flex;
+.iconframe {
+  display: inline-flex;
   justify-content: center;
   align-items: flex-start;
   gap: 35px;
 }
-.icon{
+
+.icon {
   width: 30px;
   height: 30px;
 }
 
-.call{
-  
+.call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 165px;
   height: 88px;
   flex-shrink: 0;
+
+  position: fixed;
+  bottom: 100px;
+  right: 60px;
 
   border-radius: 50px;
   border: 10px solid #BBD5F7;
   background: linear-gradient(98deg, #BED3FF -10.83%, #D2F3E5 51.79%, #FFEBD9 110.76%);
 }
-.calltext{
+
+.calltext {
   color: rgba(64, 57, 48, 0.80);
   text-align: center;
   font-family: Pretendard;

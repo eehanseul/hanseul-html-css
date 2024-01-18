@@ -448,7 +448,6 @@ box-sizing: border-box; 적용시켜주기
   padding: 64px 0px;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 10px;
 
   background: #E6EEFF;
@@ -462,4 +461,6 @@ box-sizing: border-box; 적용시켜주기
   font-weight: 600;
   line-height: 125%; /* 60px */
   letter-spacing: -0.96px;
+
+  margin-left:30px;
 }

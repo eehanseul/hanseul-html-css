@@ -117,7 +117,7 @@ header h1 em {
   flex-shrink: 0;
   border-radius: 500px;
   border: 10px solid #BCF2F9;
-  background: url(/fly-loopy/image.jpg),
+  background: url(./fly-loopy/image.jpg),
     lightgray 50% / cover no-repeat;
   background-size: cover;
 }
@@ -437,4 +437,28 @@ box-sizing: border-box; 적용시켜주기
   font-weight: 700;
   line-height: 25px;
   /* 125% */
+}
+
+/* 포부 부분 */
+.fighting{
+  display: flex;
+  width: 1366px;
+  height: 406px;
+  padding: 64px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background: #E6EEFF;
+}
+.fighting p{
+  align-self: stretch;
+  color: #403930;
+  font-family: Pretendard;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 60px */
+  letter-spacing: -0.96px;
 }

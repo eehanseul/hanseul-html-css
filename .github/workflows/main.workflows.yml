@@ -23,3 +23,6 @@ jobs:
       - name: Upload to S3
         run: |
           aws s3 sync web s3://pbee-bucket/
+
+      - name: Invalidate cloudfront
+        run: aws cloudfront create-invalidation --distribution-id E1EOS6RU4OWJ9T --paths "/*" # Cloudfront ID로 변경

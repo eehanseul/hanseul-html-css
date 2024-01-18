@@ -1,6 +1,7 @@
 /* 메뉴바 반응형으로 */
 nav {
     display: flex;
+    width:auto;
     height: 60px;
     padding: 0px 24px;
     align-self: stretch;
@@ -21,7 +22,7 @@ nav {
 
 header {
     display: flex;
-    width: 390px;
+    width: auto;
     height: fit-content;
     padding: 60px 10px;
     flex-direction: column;

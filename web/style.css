@@ -369,7 +369,6 @@ box-sizing: border-box; 적용시켜주기
 /* 피드백 부분 */
 .feedback {
   display: flex;
-  width: auto;
   height: 609px;
   padding: 80px 0px 120px 0px;
   flex-direction: column;
@@ -396,9 +395,12 @@ box-sizing: border-box; 적용시켜주기
 }
 
 .mframe {
+  width: 1120px;
   display: flex;
   align-items: flex-start;
   gap: 40px;
+
+  overflow:auto;
 }
 
 .mbox {
